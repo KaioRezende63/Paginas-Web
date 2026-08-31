@@ -1,43 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <meta charset="utf-8">
-    <title>QUALQUER COISA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades Kaio Rezende - INTRODUÇÃO A CONST. PAG WEB</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Cor de fundo confortável (AliceBlue) */
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .container {
+            display: flex; /* Para colocar o texto e a foto lado a lado */
+            align-items: center; /* Centraliza verticalmente */
+            margin-bottom: 20px;
+        }
+
+        .texto-apresentacao {
+            flex: 1; /* Ocupa o espaço restante */
+            margin-right: 20px;
+        }
+
+        .foto-perfil {
+            width: 150px; /* Largura da foto */
+            height: 150px; /* Altura da foto */
+            border-radius: 50%; /* Torna a foto redonda */
+            object-fit: cover; /* Garante que a imagem se ajuste ao contorno */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #e0e0e0;
+        }
+    </style>
 </head>
 <body>
 
-  
-    <h2>Hino</h2>
-        <p>
-            Alô nação rubro-negra, aqui quem fala é o Zico
-            Canta esse hino que ele é maravilhoso.
-        </p>
-        <p>
-            Uma vez Flamengo, sempre flamengo
-            Flamengo seeeeempre eu heeeeei de seeeeeeeeer
-        </p>
-    <h2>Rap do Centenário</h2>
-    
-        <p>
-            Vai Flamengooooo, balança a rede do adversário
-            Vai, Flamengo, comemorando seu primeiro Centenário
-        </p>
+    <header>
+        <h1>Kaio Rezende</h1>
+        <p>Portfólio de Atividades - Sistemas para Internet</p>
+    </header>
 
-        <h2>Principais títulos</h2>
-        <ul>
-            <li>Brasileiro: 1980, 1981, 1983, 1987, 1992, 2009, 2019, 2020</li>
-            <li>Libertadores da América: 1981, 2019</li>
-            <li>Mundial de Clubes (copa Intercontinental): 1981</li>
-          </ul>
-          <table border="4">
+    <div class="container">
+        <div class="texto-apresentacao">
+            <h2>Sobre Mim</h2>
+            <p>Olá, eu sou o Kaio Rezende, Aluno do curso de sistemas para internet. Este portfólio é um espaço onde compartilho as atividades da materia de introdução a construção de paginas web.</p>
+            <p>Navegue pela tabela abaixo para conhecer um pouco mais sobre o meu trabalho.</p>
+        </div>
+        <img src="FOTOEU.png" alt="Foto de Kaio Rezende" class="foto-perfil"> 
+    </div>
+
+    <h2>Minhas Atividades</h2>
+    <table>
+        <thead>
             <tr>
-                <td>qualquer coisa</td>
-                <td>qualquer coisa</td>
+                <th>Nome da Atividade</th>
+                <th>Descrição</th>
+                <th>Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Atividade 1: Estrutura Básica HTML</td>
+                <td>Criação de uma página web simples utilizando as tags principais do HTML.</td>
+                <td><a href="https://seu-usuario.github.io/seu-repositorio/atividade1.html" target="_blank">Ver Atividade</a></td>
             </tr>
             <tr>
-                <td>qualquer coisa</td>
-                <td>qualquer coisa</td>
+                <td>Atividade 2: Estilização com CSS</td>
+                <td>Aplicação de estilos CSS para personalizar o layout e a aparência de uma página web.</td>
+                <td><a href="https://seu-usuario.github.io/seu-repositorio/atividade2.html" target="_blank">Ver Atividade</a></td>
             </tr>
-          </table>
- </body>
+            <tr>
+                <td>Atividade 3: Introdução ao JavaScript</td>
+                <td>Implementação de scripts JavaScript para adicionar interatividade à página.</td>
+                <td><a href="https://seu-usuario.github.io/seu-repositorio/atividade3.html" target="_blank">Ver Atividade</a></td>
+            </tr>
+            <tr>
+                <td>Projeto Final</td>
+                <td>Desenvolvimento de uma aplicação web completa, integrando HTML, CSS e JavaScript.</td>
+                <td><a href="https://seu-usuario.github.io/seu-repositorio/projeto-final.html" target="_blank">Ver Projeto</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
 </html>
