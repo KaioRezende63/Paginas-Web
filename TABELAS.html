@@ -114,3 +114,186 @@
             color: #16a34a;
             font-weight: bold;
         }
+
+        .btn-buy {
+            background-color: #0284c7;
+            color: white;
+            padding: 6px 12px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            display: inline-block;
+            transition: background 0.2s;
+        }
+
+        .btn-buy:hover {
+            background-color: #0369a1;
+        }
+
+        /* Rodapé da Tabela */
+        tfoot td {
+            background-color: #e2e8f0;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <h1>TechZone Store</h1>
+            <p>Sua loja de eletrônicos e periféricos de alta performance</p>
+            <nav style="margin-top: 15px;">
+                <a href="#catalogo">Catálogo</a> | 
+                <a href="#comparativo">Comparativo</a> | 
+                <a href="mailto:contato@techzone.com">Contato</a>
+            </nav>
+        </header>
+
+        <h2 class="section-title" id="catalogo">1. Catálogo de Ofertas e Carrinho</h2>
+        <p style="margin-bottom: 10px;">Confira os itens disponíveis em destaque e adicione ao seu carrinho:</p>
+        
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="text-center">Imagem</th>
+                        <th>Categoria</th>
+                        <th>Produto</th>
+                        <th class="text-center">Qtd.</th>
+                        <th class="text-right">Preço Un.</th>
+                        <th class="text-right">Total</th>
+                        <th class="text-center">Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-center">
+                            <img src="https://via.placeholder.com/60" alt="Smartphone XYZ" class="product-img">
+                        </td>
+                        <td rowspan="2" class="bold">Mobile</td>
+                        <td>
+                            <a href="#">Smartphone Tech X 128GB</a><br>
+                            <small>Cor: Preto | Tela: 6.5"</small>
+                        </td>
+                        <td class="text-center">1</td>
+                        <td class="text-right price">R$ 2.499,00</td>
+                        <td class="text-right price">R$ 2.499,00</td>
+                        <td class="text-center"><a href="#" class="btn-buy">Comprar</a></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">
+                            <img src="https://via.placeholder.com/60" alt="Fone Bluetooth" class="product-img">
+                        </td>
+                        <td>
+                            <a href="#">Fone de Ouvido Bluetooth Noise-Cancel</a><br>
+                            <small>Bateria: 30h</small>
+                        </td>
+                        <td class="text-center">2</td>
+                        <td class="text-right price">R$ 350,00</td>
+                        <td class="text-right price">R$ 700,00</td>
+                        <td class="text-center"><a href="#" class="btn-buy">Comprar</a></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">
+                            <img src="https://via.placeholder.com/60" alt="Teclado Mecânico" class="product-img">
+                        </td>
+                        <td class="bold">Periféricos</td>
+                        <td>
+                            <a href="#">Teclado Mecânico RGB Switch Blue</a><br>
+                            <small>ABNT2 | Anti-Ghosting</small>
+                        </td>
+                        <td class="text-center">1</td>
+                        <td class="text-right price">R$ 320,00</td>
+                        <td class="text-right price">R$ 320,00</td>
+                        <td class="text-center"><a href="#" class="btn-buy">Comprar</a></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5" class="text-right">Subtotal:</td>
+                        <td class="text-right price">R$ 3.519,00</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" class="text-right">Frete Fixo (Brasil):</td>
+                        <td class="text-right price">R$ 30,00</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" class="text-right">Valor Total do Pedido:</td>
+                        <td class="text-right price" style="font-size: 1.1rem;">R$ 3.549,00</td>
+                        <td class="text-center"><a href="#" class="btn-buy" style="background-color: #16a34a;">Finalizar</a></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <h2 class="section-title" id="comparativo">2. Comparativo Técnico de Laptops</h2>
+        <p style="margin-bottom: 10px;">Compare as configurações antes de tomar sua decisão:</p>
+
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th rowspan="2" class="text-center" style="vertical-align: middle;">Especificações</th>
+                        <th colspan="2" class="text-center">Modelos Disponíveis</th>
+                    </tr>
+                    <tr>
+                        <th class="text-center">TechBook Air (Entrada)</th>
+                        <th class="text-center">TechBook Pro (Avançado)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="bold">Processador</td>
+                        <td>Intel Core i5 - 12ª Geração</td>
+                        <td>Intel Core i7 - 13ª Geração</td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Memória RAM</td>
+                        <td>8 GB DDR4</td>
+                        <td>16 GB DDR5</td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Armazenamento</td>
+                        <td>SSD 256 GB NVMe</td>
+                        <td>SSD 1 TB NVMe</td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Placa de Vídeo</td>
+                        <td>Integrada (Intel Iris Xe)</td>
+                        <td>Dedicada (NVIDIA RTX 4050 6GB)</td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Garantia Incluída</td>
+                        <td colspan="2" class="text-center" style="background-color: #f0fdf4; color: #15803d; font-weight: bold;">
+                            12 Meses de Garantia Oficial de Fábrica
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Preço à Vista</td>
+                        <td class="text-center price">R$ 3.200,00</td>
+                        <td class="text-center price">R$ 6.800,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 TechZone Store — Todos os direitos reservados.</p>
+            <p>Dúvidas? Acesse nossa <a href="#">Central de Ajuda</a>.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
